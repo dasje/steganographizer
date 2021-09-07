@@ -8,6 +8,7 @@ class BasePic:
         self.bin_array = None
         self.file_name = None
         self.file_extension = None
+        self.auto_run()
 
     def to_binary_array(self):
         """Takes a picture object and converts it to an array of bytes"""

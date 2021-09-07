@@ -8,6 +8,7 @@ class BaseFile:
         self.binary_array = None
         self.file_name = None
         self.file_extension = None
+        self.auto_run()
 
     def to_binary(self):
         """Converts the file to a list of binary numbers"""
