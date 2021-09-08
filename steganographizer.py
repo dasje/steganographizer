@@ -62,7 +62,8 @@ class Stegan:
 
     def convert_back_to_image(self):
         """Converts the processed array back to an image"""
-        data = Image.fromarray(self.combined_arrays)
+        np_array = np.array(self.combined_arrays)
+        data = Image.fromarray(np_array, mode='RGB')
         data.save('{}_steganographized.{}'.format(self.pic.file_name, self.pic.file_extension))
 
     def auto_run(self):
@@ -70,6 +71,7 @@ class Stegan:
         self.pic_lsb_array = two_arrays[1]
         self.pic_msb_array = two_arrays[0]
         self.combined_arrays = self.combine_arrays()
+        print(self.combined_arrays)
         self.convert_back_to_image()
 
 
