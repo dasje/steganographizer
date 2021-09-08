@@ -31,8 +31,3 @@ class BaseFile:
         self.binary_array = self.to_binary()
         self.file_name = self.get_file_name()
         self.file_extension = self.get_file_extension()
-
-x = BaseFile("imgs/small.txt")
-print(x.to_binary())
-print(x.get_file_extension())
-print(x.get_file_name())

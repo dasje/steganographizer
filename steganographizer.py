@@ -71,12 +71,4 @@ class Stegan:
         self.pic_lsb_array = two_arrays[1]
         self.pic_msb_array = two_arrays[0]
         self.combined_arrays = self.combine_arrays()
-        print(self.combined_arrays)
         self.convert_back_to_image()
-
-
-x = BasePic("imgs/testimg01.jpg")
-y = BaseFile("imgs/small.txt")
-z = Stegan(x, y)
-z.auto_run()
-#print(a)

@@ -42,9 +42,3 @@ class BasePic:
         self.file_extension = self.get_file_extension()
         self.file_name = self.get_file_name()
 
-
-x = BasePic("imgs/testimg01.jpg")
-#x.file.show()
-print(x.to_binary_array())
-print(x.get_file_name())
-print(x.get_file_extension())
